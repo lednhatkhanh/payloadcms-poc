@@ -279,16 +279,16 @@ Sources: https://payloadcms.com/docs/plugins/overview ; https://payloadcms.com/d
 # Six-week POC target with two-week contingency
 
 <div class="columns-2">
-  <div class="panel"><h2>Team A · POC</h2><p>6 developers · 2 QA · 1 PPO · 1 Technical Architect (TA / tech lead).</p><p>Developers pair across tenant/workflow, Drupal imports, and platform/integration work. QA validates continuously; PPO owns acceptance; TA owns architecture.</p></div>
-  <div class="panel"><h2>Team B · Existing delivery</h2><p>Same composition: 6 developers · 2 QA · 1 PPO · 1 TA.</p><p>Continues current delivery during the POC. Proposed implementation split: Team A owns the platform; Team B owns website integration and migration.</p></div>
+  <div class="panel"><h2>Team A · POC</h2><p>Developers pair across tenant/workflow, Drupal imports, and platform/integration work. QA validates continuously; PPO owns acceptance; TA owns architecture.</p></div>
+  <div class="panel"><h2>Team B · Existing delivery</h2><p>Continues current delivery during the POC. Proposed implementation split: Team A owns the platform; Team B owns website integration and migration.</p></div>
 </div>
 
 <div class="callout soft">3 × two-week sprints with AI Agent support; up to 2 extra weeks only for unresolved validation or vendor dependencies.</div>
 
-<div class="callout">PO provides higher-level direction and approvals outside the teams. Each team has 10 members.</div>
+<div class="callout">PO provides higher-level direction and approvals outside the teams.</div>
 
 <!--
-Two teams total 20 people: 12 developers, 4 QA, 2 PPOs and 2 TAs. PPO owns the team backlog and flow acceptance. PO provides higher-level product direction and decisions outside the 20-person team count. Before week 1, secure Drupal extracts, Enterprise trial and GCP access. There is no real-user training or usability trial in the POC. Platform/security and procurement provide shared support. Content creators join during implementation. No assumption that AI removes QA, review or vendor lead times. Both teams' implementation allocation requires portfolio agreement after the POC.
+PPO owns the team backlog and flow acceptance. PO provides higher-level product direction and decisions outside the teams. Before week 1, secure Drupal extracts, Enterprise trial and GCP access. There is no real-user training or usability trial in the POC. Platform/security and procurement provide shared support. Content creators join during implementation. No assumption that AI removes QA, review or vendor lead times. Both teams' implementation allocation requires portfolio agreement after the POC.
 -->
 
 ---
