@@ -1,0 +1,22 @@
+{
+  "name": "@repo/contracts",
+  "private": true,
+  "type": "module",
+  "exports": {
+    "./env": "./src/env.ts",
+    "./forms": "./src/forms.ts"
+  },
+  "scripts": {
+    "test": "vitest run",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "zod": "catalog:"
+  },
+  "devDependencies": {
+    "@repo/typescript-config": "workspace:*",
+    "@types/node": "24.13.3",
+    "typescript": "7.0.2",
+    "vitest": "5.0.0"
+  }
+}

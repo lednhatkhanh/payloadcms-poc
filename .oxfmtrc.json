@@ -1,0 +1,15 @@
+{
+  "$schema": "./node_modules/oxfmt/configuration_schema.json",
+  "printWidth": 100,
+  "singleQuote": true,
+  "semi": false,
+  "trailingComma": "all",
+  "ignorePatterns": [
+    ".agents/**",
+    ".next/**",
+    "apps/*/next-env.d.ts",
+    "apps/slides/slides.md",
+    "node_modules/**",
+    "packages/payload-config/src/generated/**"
+  ]
+}

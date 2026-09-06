@@ -1,0 +1,42 @@
+{
+  "name": "@repo/web",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "next build",
+    "build:compile": "next build --experimental-build-mode compile",
+    "dev": "DISABLE_PAYLOAD_HMR=true next dev --port 3000",
+    "start": "next start --port 3000",
+    "test": "vitest run src --passWithNoTests",
+    "test:e2e": "playwright test",
+    "typecheck": "next typegen && tsc --noEmit"
+  },
+  "dependencies": {
+    "@payloadcms/next": "catalog:",
+    "@payloadcms/richtext-lexical": "catalog:",
+    "@repo/contracts": "workspace:*",
+    "@repo/payload-config": "workspace:*",
+    "@repo/ui": "workspace:*",
+    "date-fns": "catalog:",
+    "es-toolkit": "catalog:",
+    "graphql": "catalog:",
+    "ky": "catalog:",
+    "next": "catalog:",
+    "payload": "catalog:",
+    "react": "catalog:",
+    "react-dom": "catalog:"
+  },
+  "devDependencies": {
+    "@axe-core/playwright": "4.13.0",
+    "@next/playwright": "16.3.4",
+    "@playwright/test": "1.63.0",
+    "@repo/typescript-config": "workspace:*",
+    "@tailwindcss/postcss": "catalog:",
+    "@types/react": "catalog:",
+    "@types/react-dom": "catalog:",
+    "babel-plugin-react-compiler": "catalog:",
+    "tailwindcss": "catalog:",
+    "typescript": "7.0.2",
+    "vitest": "5.0.0"
+  }
+}

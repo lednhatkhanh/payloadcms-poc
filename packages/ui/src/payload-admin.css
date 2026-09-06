@@ -1,0 +1,163 @@
+:root {
+  color-scheme: light;
+
+  --admin-brand: #bd0f72;
+  --admin-brand-hover: #9a105e;
+  --admin-brand-soft: #fff1f7;
+  --admin-brand-subtle: #ffe4f0;
+  --admin-surface: #ffffff;
+  --admin-page: #fcf9fb;
+  --admin-text: #1d1419;
+  --admin-text-muted: #66505c;
+  --admin-border: #dfcfd7;
+  --admin-shadow: 0 1.5rem 4rem rgb(77 6 45 / 10%);
+  --admin-auth-background:
+    radial-gradient(circle at 15% 15%, var(--admin-brand-subtle), transparent 34rem),
+    linear-gradient(145deg, var(--admin-page), var(--admin-brand-soft));
+
+  --color-base-0: #ffffff;
+  --color-base-50: #fcf9fb;
+  --color-base-100: #f7f1f4;
+  --color-base-150: #efe6eb;
+  --color-base-200: #e7dbe1;
+  --color-base-250: #dfcfd7;
+  --color-base-300: #d2bdc8;
+  --color-base-350: #c3aab7;
+  --color-base-400: #ae929f;
+  --color-base-450: #a08391;
+  --color-base-500: #8f7280;
+  --color-base-550: #806675;
+  --color-base-600: #725a67;
+  --color-base-650: #66505c;
+  --color-base-700: #58434f;
+  --color-base-750: #4a3842;
+  --color-base-800: #3c2d35;
+  --color-base-850: #31242b;
+  --color-base-900: #281c22;
+  --color-base-950: #1d1419;
+  --color-base-1000: #120b0f;
+
+  --font-body: 'Noto Sans', sans-serif;
+  --font-serif: 'Noto Sans', sans-serif;
+  --style-radius-s: 0.5rem;
+  --style-radius-m: 0.75rem;
+  --style-radius-l: 1rem;
+  --accessibility-outline: 2px solid var(--admin-brand);
+  --accessibility-outline-offset: 3px;
+}
+
+html:has(.template-minimal),
+body:has(.template-minimal),
+body:has(.template-minimal) > div {
+  background: var(--admin-auth-background);
+  min-height: 100svh;
+}
+
+.template-minimal,
+.template-default {
+  --font-body: var(--font-noto-sans), 'Noto Sans', sans-serif;
+  --font-serif: var(--font-noto-sans), 'Noto Sans', sans-serif;
+  font-family: var(--font-body);
+}
+
+.template-minimal {
+  background: transparent;
+  min-height: 100svh;
+  padding: 2rem;
+}
+
+.template-minimal--width-normal .template-minimal__wrap {
+  max-width: 32rem;
+}
+
+.template-minimal__wrap {
+  background: var(--admin-surface);
+  border: 1px solid var(--admin-border);
+  border-radius: var(--style-radius-l);
+  box-shadow: var(--admin-shadow);
+  padding: 3rem;
+}
+
+.create-first-user {
+  gap: 0.75rem;
+}
+
+.create-first-user h1,
+.login h1 {
+  color: var(--admin-text);
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: -0.035em;
+  line-height: 1.1;
+}
+
+.create-first-user > p,
+.login__form > p {
+  color: var(--admin-text-muted);
+  font-size: 0.9375rem;
+  line-height: 1.6;
+}
+
+.create-first-user form {
+  margin-top: 1.25rem;
+}
+
+.field-label {
+  color: var(--admin-text);
+  font-weight: 600;
+}
+
+.field-type input,
+.field-type textarea,
+.rs__control {
+  transition:
+    border-color 120ms ease,
+    box-shadow 120ms ease,
+    background-color 120ms ease;
+}
+
+.field-type input:focus,
+.field-type input:focus-within,
+.field-type textarea:focus,
+.rs__control:focus-within {
+  border-color: var(--admin-brand);
+  box-shadow: 0 0 0 3px var(--admin-brand-subtle);
+}
+
+.btn--style-primary {
+  --bg-color: var(--admin-brand);
+  --hover-bg: var(--admin-brand-hover);
+  --color: var(--admin-surface);
+  --hover-color: var(--admin-surface);
+  --btn-font-weight: 700;
+}
+
+.create-first-user .form-submit .btn,
+.login__form .form-submit .btn {
+  width: 100%;
+  justify-content: center;
+}
+
+.nav__brand,
+.nav__brand strong {
+  color: var(--admin-brand);
+}
+
+@media (max-width: 600px) {
+  .template-minimal {
+    align-items: flex-start;
+    padding: 1rem;
+  }
+
+  .template-minimal__wrap {
+    padding: 2rem 1.5rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .field-type input,
+  .field-type textarea,
+  .rs__control {
+    transition: none;
+  }
+}

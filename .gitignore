@@ -1,0 +1,16 @@
+node_modules/
+.turbo/
+.next/
+dist/
+coverage/
+playwright-report/
+test-results/
+.env
+.env.local
+storage/media/*
+!storage/media/.gitkeep
+apps/cms/src/app/(payload)/admin/importMap.js
+*.tsbuildinfo
+.DS_Store
+.pnpm-store
+tmp/slides-google/

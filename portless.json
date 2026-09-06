@@ -1,0 +1,8 @@
+{
+  "apps": {
+    "apps/cms": { "appPort": 3001, "name": "cms.payload-newsroom" },
+    "apps/slides": { "appPort": 3030, "name": "slides.payload-newsroom" },
+    "apps/web": { "appPort": 3000, "name": "payload-newsroom" }
+  },
+  "turbo": false
+}

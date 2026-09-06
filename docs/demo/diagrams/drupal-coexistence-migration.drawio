@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mxfile host="drawio" version="31.3.2">
+  <diagram name="Coexistence: Next.js serves both CMSs while ownership moves in waves">
+    <mxGraphModel dx="1600" dy="900" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1600" pageHeight="900" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="title" value="Coexistence: Next.js serves both CMSs while ownership moves in waves" style="text;html=1;align=left;verticalAlign=middle;fontFamily=Helvetica;fontSize=28;fontStyle=1;fontColor=#202124;" vertex="1" parent="1">
+          <mxGeometry x="50" y="25" width="1450" height="45" as="geometry" />
+        </mxCell>
+        <mxCell id="subtitle" value="Pages, news, and forms use the lightest safe migration method; each accepted wave retires its Drupal connection." style="text;html=1;align=left;verticalAlign=middle;fontFamily=Helvetica;fontSize=14;fontColor=#5F6368;" vertex="1" parent="1">
+          <mxGeometry x="50" y="75" width="1450" height="28" as="geometry" />
+        </mxCell>
+        <mxCell id="delivery" value="TEMPORARY DUAL-SOURCE DELIVERY" style="swimlane;startSize=40;horizontal=1;container=1;pointerEvents=0;rounded=1;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=16;fontStyle=1;fontColor=#174EA6;fillColor=#F7FAFF;swimlaneFillColor=#F7FAFF;strokeColor=#4285F4;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="230" y="140" width="1320" height="330" as="geometry" />
+        </mxCell>
+        <mxCell id="users" value="Website users" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;fontFamily=Helvetica;fontSize=14;fontStyle=1;strokeColor=#5F6368;fillColor=#FFFFFF;" vertex="1" parent="1">
+          <mxGeometry x="50" y="245" width="85" height="105" as="geometry" />
+        </mxCell>
+        <mxCell id="next" value="Next.js route&#xa;resolver" style="rounded=1;whiteSpace=wrap;html=1;align=center;spacingLeft=72;fontFamily=Helvetica;fontSize=15;fontStyle=1;fontColor=#174EA6;fillColor=#DAE8FC;strokeColor=#4285F4;strokeWidth=3;" vertex="1" parent="delivery">
+          <mxGeometry x="60" y="100" width="230" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="registry" value="Route ownership registry&#xa;drupal · drupal_iframe · payload · retired" style="rounded=1;whiteSpace=wrap;html=1;align=center;spacingLeft=52;fontFamily=Helvetica;fontSize=12;fontStyle=1;fillColor=#FFFFFF;strokeColor=#BD0F72;" vertex="1" parent="delivery">
+          <mxGeometry x="40" y="225" width="270" height="65" as="geometry" />
+        </mxCell>
+        <mxCell id="payload" value="Payload CMS&#xa;new authority for accepted routes" style="rounded=1;whiteSpace=wrap;html=1;align=center;spacingLeft=62;fontFamily=Helvetica;fontSize=15;fontStyle=1;fontColor=#137333;fillColor=#D5E8D4;strokeColor=#34A853;strokeWidth=3;" vertex="1" parent="delivery">
+          <mxGeometry x="420" y="85" width="250" height="95" as="geometry" />
+        </mxCell>
+        <mxCell id="adapter" value="Drupal content adapter&#xa;legacy authority for active routes" style="rounded=1;whiteSpace=wrap;html=1;align=center;spacingLeft=58;fontFamily=Helvetica;fontSize=14;fontStyle=1;fontColor=#A50E0E;fillColor=#F8CECC;strokeColor=#EA4335;strokeWidth=2;" vertex="1" parent="delivery">
+          <mxGeometry x="760" y="70" width="270" height="95" as="geometry" />
+        </mxCell>
+        <mxCell id="iframe" value="Tracked Drupal iframe&#xa;temporary route bridge" style="rounded=1;whiteSpace=wrap;html=1;align=center;spacingLeft=60;fontFamily=Helvetica;fontSize=14;fontStyle=1;fontColor=#A50E0E;fillColor=#FFF8F7;strokeColor=#EA4335;strokeWidth=2;dashed=1;" vertex="1" parent="delivery">
+          <mxGeometry x="760" y="195" width="270" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="drupal" value="Drupal / Acquia estate&#xa;27 instances" style="rounded=1;whiteSpace=wrap;html=1;align=center;spacingLeft=55;fontFamily=Helvetica;fontSize=16;fontStyle=1;fontColor=#A50E0E;fillColor=#FFF8F7;strokeColor=#EA4335;strokeWidth=3;" vertex="1" parent="delivery">
+          <mxGeometry x="1090" y="105" width="190" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="one-owner" value="One authoritative owner per route or item" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=14;fontStyle=1;fontColor=#BD0F72;fillColor=#FFFFFF;strokeColor=#BD0F72;" vertex="1" parent="delivery">
+          <mxGeometry x="410" y="215" width="290" height="55" as="geometry" />
+        </mxCell>
+        <mxCell id="icon-next" value="" style="shape=image;html=1;aspect=fixed;imageAspect=0;pointerEvents=0;image=data:image/svg+xml,PHN2ZyByb2xlPSJpbWciIHZpZXdCb3g9IjAgMCAyNCAyNCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48dGl0bGU+TmV4dC5qczwvdGl0bGU+PHBhdGggZD0iTTE4LjY2NSAyMS45NzhDMTYuNzU4IDIzLjI1NSAxNC40NjUgMjQgMTIgMjQgNS4zNzcgMjQgMCAxOC42MjMgMCAxMlM1LjM3NyAwIDEyIDBzMTIgNS4zNzcgMTIgMTJjMCAzLjU4My0xLjU3NCA2LjgwMS00LjA2NyA5LjAwMUw5LjIxOSA3LjJINy4ydjkuNTk2aDEuNjE1VjkuMjUxbDkuODUgMTIuNzI3Wm0tMy4zMzItOC41MzMgMS42IDIuMDYxVjcuMmgtMS42djYuMjQ1WiIvPjwvc3ZnPg==;" vertex="1" parent="delivery">
+          <mxGeometry x="80" y="120" width="50" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="icon-registry" value="" style="shape=document;html=1;pointerEvents=0;fillColor=#F6D7EA;strokeColor=#BD0F72;strokeWidth=2;" vertex="1" parent="delivery">
+          <mxGeometry x="55" y="238" width="42" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="icon-payload" value="" style="shape=image;html=1;aspect=fixed;imageAspect=0;pointerEvents=0;image=data:image/svg+xml,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA5NiA5NiIgcm9sZT0iaW1nIiBhcmlhLWxhYmVsbGVkYnk9InRpdGxlIj4KICA8dGl0bGUgaWQ9InRpdGxlIj5Db250ZW50IG1hbmFnZW1lbnQgc3lzdGVtPC90aXRsZT4KICA8cGF0aCBmaWxsPSIjQUVDQkZBIiBkPSJNMTkgMTBoNDhhOCA4IDAgMCAxIDggOHY1NmE4IDggMCAwIDEtOCA4SDE5YTggOCAwIDAgMS04LThWMThhOCA4IDAgMCAxIDgtOFoiLz4KICA8cGF0aCBmaWxsPSIjRkZGRkZGIiBkPSJNMjUgMjJoNDRhOCA4IDAgMCAxIDggOHY0OGE4IDggMCAwIDEtOCA4SDI1YTggOCAwIDAgMS04LThWMzBhOCA4IDAgMCAxIDgtOFoiLz4KICA8cGF0aCBmaWxsPSIjNDI4NUY0IiBkPSJNMjkgMzRoMzZ2MTBIMjl6bTAgMThoMTZ2MjJIMjl6bTIyIDBoMTR2Nkg1MXptMCAxMGgxNHYxMkg1MXoiLz4KPC9zdmc+Cg==;" vertex="1" parent="delivery">
+          <mxGeometry x="440" y="106" width="52" height="52" as="geometry" />
+        </mxCell>
+        <mxCell id="icon-adapter" value="" style="shape=mxgraph.gcp2.gear;html=1;pointerEvents=0;fillColor=#EA4335;strokeColor=none;" vertex="1" parent="delivery">
+          <mxGeometry x="780" y="94" width="44" height="44" as="geometry" />
+        </mxCell>
+        <mxCell id="icon-iframe" value="" style="image;aspect=fixed;html=1;points=[];align=center;fontSize=12;image=img/lib/azure2/general/Browser.svg;pointerEvents=0;" vertex="1" parent="delivery">
+          <mxGeometry x="780" y="214" width="48" height="42" as="geometry" />
+        </mxCell>
+        <mxCell id="icon-drupal" value="" style="shape=image;html=1;aspect=fixed;imageAspect=0;pointerEvents=0;image=data:image/svg+xml,PHN2ZyByb2xlPSJpbWciIHZpZXdCb3g9IjAgMCAyNCAyNCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48dGl0bGU+RHJ1cGFsPC90aXRsZT48cGF0aCBkPSJNMTUuNzggNS4xMTNDMTQuMDkgMy40MjUgMTIuNDggMS44MTUgMTEuOTk4IDBjLS40OCAxLjgxNS0yLjA5IDMuNDI1LTMuNzc4IDUuMTEzLTIuNTM0IDIuNTMtNS40MDUgNS40LTUuNDA1IDkuNzAyYTkuMTg0IDkuMTg1IDAgMTAxOC4zNjggMGMwLTQuMzAzLTIuODcxLTcuMTcxLTUuNDA1LTkuNzAyTTYuNzIgMTYuOTU0Yy0uNTYzLS4wMTktMi42NC0zLjYgMS4yMTUtNy40MTZsMi41NSAyLjc4OGEuMjE4LjIxOCAwIDAxLS4wMTYuMzI1Yy0uNjEuNjI1LTMuMjA0IDMuMjI3LTMuNTI3IDQuMTI2LS4wNjYuMTg2LS4xNjQuMTgtLjIyMi4xNzdNMTIgMjEuNjc3YTMuMTU4IDMuMTU4IDAgMDEtMy4xNTgtMy4xNTkgMy4yOTEgMy4yOTEgMCAwMS43ODctMi4wODdjLjU3LS42OTYgMi4zNy0yLjY1NSAyLjM3LTIuNjU1czEuNzc0IDEuOTg4IDIuMzY3IDIuNjQ5YTMuMDkgMy4wOSAwIDAxLjc5MiAyLjA5M0EzLjE1OCAzLjE1OCAwIDAxMTIgMjEuNjc3bTYuMDQ2LTUuMTIzYy0uMDY4LjE1LS4yMjMuMzk4LS40MzEuNDA1LS4zNzEuMDE0LS40MTEtLjE3Ny0uNjg2LS41ODMtLjYwNC0uODkyLTUuODY0LTYuMzktNi44NDgtNy40NTUtLjg2Ni0uOTM1LS4xMjItMS41OTUuMjIzLTEuOTRDMTAuNzM2IDYuNTQ3IDEyIDUuMjg1IDEyIDUuMjg1czMuNzY2IDMuNTc0IDUuMzM2IDYuMDE2YzEuNTcgMi40NDMgMS4wMjkgNC41NTYuNzEgNS4yNTMiLz48L3N2Zz4=;" vertex="1" parent="delivery">
+          <mxGeometry x="1105" y="137" width="54" height="54" as="geometry" />
+        </mxCell>
+        <mxCell id="lanes-title" value="MIGRATION LANES" style="text;html=1;align=left;verticalAlign=middle;fontFamily=Helvetica;fontSize=16;fontStyle=1;fontColor=#202124;" vertex="1" parent="1">
+          <mxGeometry x="50" y="500" width="300" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="pages" value="PAGES&#xa;global static + dynamic · local · legacy Drupal&#xa;route by route; iframe bridge only where needed" style="rounded=1;whiteSpace=wrap;html=1;align=right;spacingRight=18;fontFamily=Helvetica;fontSize=14;fontStyle=1;fillColor=#DAE8FC;strokeColor=#6C8EBF;" vertex="1" parent="1">
+          <mxGeometry x="50" y="540" width="470" height="105" as="geometry" />
+        </mxCell>
+        <mxCell id="news" value="NEWS&#xa;global + local collections&#xa;bulk waves; deltas and reconciliation only while active" style="rounded=1;whiteSpace=wrap;html=1;align=right;spacingRight=18;fontFamily=Helvetica;fontSize=14;fontStyle=1;fillColor=#FFF2CC;strokeColor=#D6B656;" vertex="1" parent="1">
+          <mxGeometry x="565" y="540" width="470" height="105" as="geometry" />
+        </mxCell>
+        <mxCell id="forms" value="FORMS&#xa;Drupal local forms&#xa;form by form after behavior and integrations pass" style="rounded=1;whiteSpace=wrap;html=1;align=right;spacingRight=18;fontFamily=Helvetica;fontSize=14;fontStyle=1;fillColor=#E1D5E7;strokeColor=#9673A6;" vertex="1" parent="1">
+          <mxGeometry x="1080" y="540" width="470" height="105" as="geometry" />
+        </mxCell>
+        <mxCell id="icon-pages" value="" style="shape=document;html=1;pointerEvents=0;fillColor=#FFFFFF;strokeColor=#4285F4;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="78" y="570" width="48" height="48" as="geometry" />
+        </mxCell>
+        <mxCell id="icon-news" value="" style="shape=mxgraph.gcp2.arrow_cycle;html=1;pointerEvents=0;fillColor=#F9AB00;strokeColor=none;" vertex="1" parent="1">
+          <mxGeometry x="592" y="568" width="52" height="52" as="geometry" />
+        </mxCell>
+        <mxCell id="icon-forms" value="" style="shape=note;html=1;pointerEvents=0;fillColor=#FFFFFF;strokeColor=#9673A6;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="1107" y="568" width="50" height="52" as="geometry" />
+        </mxCell>
+        <mxCell id="wave-title" value="EVERY WAVE" style="text;html=1;align=left;verticalAlign=middle;fontFamily=Helvetica;fontSize=16;fontStyle=1;fontColor=#202124;" vertex="1" parent="1">
+          <mxGeometry x="50" y="680" width="300" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="migrate" value="migrate" style="shape=step;perimeter=stepPerimeter;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=15;fontStyle=1;fillColor=#DAE8FC;strokeColor=#6C8EBF;" vertex="1" parent="1">
+          <mxGeometry x="110" y="725" width="230" height="65" as="geometry" />
+        </mxCell>
+        <mxCell id="validate" value="validate" style="shape=step;perimeter=stepPerimeter;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=15;fontStyle=1;fillColor=#FFF2CC;strokeColor=#D6B656;" vertex="1" parent="1">
+          <mxGeometry x="340" y="725" width="230" height="65" as="geometry" />
+        </mxCell>
+        <mxCell id="switch" value="switch route owner" style="shape=step;perimeter=stepPerimeter;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=15;fontStyle=1;fillColor=#FFE6CC;strokeColor=#D79B00;" vertex="1" parent="1">
+          <mxGeometry x="570" y="725" width="270" height="65" as="geometry" />
+        </mxCell>
+        <mxCell id="monitor" value="monitor" style="shape=step;perimeter=stepPerimeter;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=15;fontStyle=1;fillColor=#E1D5E7;strokeColor=#9673A6;" vertex="1" parent="1">
+          <mxGeometry x="840" y="725" width="230" height="65" as="geometry" />
+        </mxCell>
+        <mxCell id="retire" value="retire Drupal connection" style="shape=step;perimeter=stepPerimeter;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=15;fontStyle=1;fillColor=#D5E8D4;strokeColor=#82B366;" vertex="1" parent="1">
+          <mxGeometry x="1070" y="725" width="320" height="65" as="geometry" />
+        </mxCell>
+        <mxCell id="guardrail" value="Frontend coexistence does not mean dual editing: rollback changes route ownership; it never reverse-syncs content." style="text;html=1;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=16;fontStyle=1;fontColor=#202124;" vertex="1" parent="1">
+          <mxGeometry x="250" y="825" width="1100" height="45" as="geometry" />
+        </mxCell>
+        <mxCell id="e1" value="web" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;endArrow=blockThin;endFill=1;strokeColor=#5F6368;strokeWidth=2;fontFamily=Helvetica;fontSize=12;labelBackgroundColor=#FFFFFF;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" edge="1" parent="1" source="users" target="next">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e2" value="owned route" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;endArrow=blockThin;endFill=1;strokeColor=#34A853;strokeWidth=3;fontFamily=Helvetica;fontSize=12;labelBackgroundColor=#FFFFFF;exitX=1;exitY=0.35;entryX=0;entryY=0.5;" edge="1" parent="delivery" source="next" target="payload">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e3" value="legacy route" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;endArrow=blockThin;endFill=1;strokeColor=#EA4335;strokeWidth=2;fontFamily=Helvetica;fontSize=12;labelBackgroundColor=#FFFFFF;exitX=0.75;exitY=0;entryX=0.5;entryY=0;" edge="1" parent="delivery" source="next" target="adapter">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="232" y="55" />
+              <mxPoint x="895" y="55" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e4" value="iframe route" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;endArrow=blockThin;endFill=1;strokeColor=#EA4335;strokeWidth=2;dashed=1;dashPattern=8 6;fontFamily=Helvetica;fontSize=12;labelBackgroundColor=#FFFFFF;exitX=1;exitY=0.8;entryX=0;entryY=0.5;" edge="1" parent="delivery" source="next" target="iframe">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="360" y="172" />
+              <mxPoint x="360" y="300" />
+              <mxPoint x="730" y="300" />
+              <mxPoint x="730" y="235" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e5" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;endArrow=blockThin;endFill=1;strokeColor=#EA4335;strokeWidth=2;exitX=1;exitY=0.5;entryX=0;entryY=0.35;" edge="1" parent="delivery" source="adapter" target="drupal">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e6" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;endArrow=blockThin;endFill=1;strokeColor=#EA4335;strokeWidth=2;dashed=1;dashPattern=8 6;exitX=1;exitY=0.5;entryX=0;entryY=0.7;" edge="1" parent="delivery" source="iframe" target="drupal">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e7" value="controls routing" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;endArrow=blockThin;endFill=1;strokeColor=#BD0F72;strokeWidth=2;fontFamily=Helvetica;fontSize=12;labelBackgroundColor=#FFFFFF;exitX=0.5;exitY=0;entryX=0.5;entryY=1;" edge="1" parent="delivery" source="registry" target="next">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

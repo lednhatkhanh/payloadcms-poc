@@ -1,0 +1,40 @@
+{
+  "name": "@repo/payload-config",
+  "private": true,
+  "type": "module",
+  "exports": {
+    ".": "./src/payload.config.ts",
+    "./locales": "./src/locales.ts",
+    "./paths": "./src/paths.ts",
+    "./preview": "./src/preview.ts",
+    "./revalidation": "./src/revalidation.ts",
+    "./seed": "./src/seed.ts",
+    "./types": "./src/generated/payload-types.ts"
+  },
+  "scripts": {
+    "test": "vitest run --passWithNoTests",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@payloadcms/db-postgres": "catalog:",
+    "@payloadcms/next": "catalog:",
+    "@payloadcms/plugin-multi-tenant": "3.88.0",
+    "@payloadcms/plugin-seo": "3.88.0",
+    "@payloadcms/richtext-lexical": "catalog:",
+    "@payloadcms/ui": "catalog:",
+    "@repo/contracts": "workspace:*",
+    "date-fns": "catalog:",
+    "es-toolkit": "catalog:",
+    "next": "catalog:",
+    "payload": "catalog:",
+    "react": "catalog:",
+    "sharp": "catalog:"
+  },
+  "devDependencies": {
+    "@repo/typescript-config": "workspace:*",
+    "@types/react": "catalog:",
+    "esbuild": "0.28.2",
+    "typescript": "7.0.2",
+    "vitest": "5.0.0"
+  }
+}

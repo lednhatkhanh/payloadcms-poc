@@ -1,0 +1,52 @@
+{
+  "name": "@repo/ui",
+  "private": true,
+  "type": "module",
+  "sideEffects": [
+    "./src/payload-admin.css",
+    "./src/styles.css"
+  ],
+  "exports": {
+    "./button": "./src/button.tsx",
+    "./card": "./src/card.tsx",
+    "./form": "./src/form.tsx",
+    "./icon": "./src/icon.tsx",
+    "./layout": "./src/layout.tsx",
+    "./link": "./src/link.tsx",
+    "./providers": "./src/providers.tsx",
+    "./skeleton": "./src/skeleton.tsx",
+    "./payload-admin.css": "./src/payload-admin.css",
+    "./styles.css": "./src/styles.css",
+    "./text": "./src/text.tsx"
+  },
+  "scripts": {
+    "test": "vitest run",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "class-variance-authority": "catalog:",
+    "lucide-react": "catalog:",
+    "next": "catalog:",
+    "react": "catalog:",
+    "react-aria-components": "catalog:",
+    "tailwind-merge": "catalog:"
+  },
+  "devDependencies": {
+    "@react-aria/test-utils": "1.0.0-rc.1",
+    "@repo/typescript-config": "workspace:*",
+    "@testing-library/jest-dom": "7.0.1",
+    "@testing-library/react": "16.3.3",
+    "@testing-library/user-event": "14.6.7",
+    "@types/react": "catalog:",
+    "@types/react-dom": "catalog:",
+    "jsdom": "30.0.1",
+    "tailwindcss": "catalog:",
+    "tailwindcss-react-aria-components": "catalog:",
+    "typescript": "7.0.2",
+    "vitest": "5.0.0"
+  },
+  "peerDependencies": {
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0"
+  }
+}

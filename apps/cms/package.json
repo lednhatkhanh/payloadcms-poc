@@ -1,0 +1,47 @@
+{
+  "name": "@repo/cms",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "payload generate:types && payload generate:importmap && next build",
+    "dev": "next dev --port 3001",
+    "predev": "payload generate:importmap",
+    "generate:importmap": "payload generate:importmap",
+    "generate:types": "payload generate:types",
+    "migrate": "payload migrate",
+    "payload": "payload",
+    "seed": "NODE_ENV=production payload run ../../packages/payload-config/src/seed.ts",
+    "start": "next start --port 3001",
+    "test": "vitest run --passWithNoTests",
+    "typecheck": "next typegen && tsc --noEmit"
+  },
+  "dependencies": {
+    "@payloadcms/db-postgres": "catalog:",
+    "@payloadcms/next": "catalog:",
+    "@payloadcms/plugin-multi-tenant": "catalog:",
+    "@payloadcms/plugin-seo": "3.88.0",
+    "@payloadcms/richtext-lexical": "catalog:",
+    "@payloadcms/ui": "catalog:",
+    "@repo/contracts": "workspace:*",
+    "@repo/payload-config": "workspace:*",
+    "@repo/ui": "workspace:*",
+    "date-fns": "catalog:",
+    "graphql": "catalog:",
+    "next": "catalog:",
+    "payload": "catalog:",
+    "react": "catalog:",
+    "react-dom": "catalog:",
+    "sharp": "catalog:"
+  },
+  "devDependencies": {
+    "@repo/typescript-config": "workspace:*",
+    "@tailwindcss/postcss": "catalog:",
+    "@types/react": "catalog:",
+    "@types/react-dom": "catalog:",
+    "babel-plugin-react-compiler": "catalog:",
+    "esbuild": "0.28.2",
+    "tailwindcss": "catalog:",
+    "typescript": "7.0.2",
+    "vitest": "5.0.0"
+  }
+}

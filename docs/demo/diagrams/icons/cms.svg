@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96 96" role="img" aria-labelledby="title">
+  <title id="title">Content management system</title>
+  <path fill="#AECBFA" d="M19 10h48a8 8 0 0 1 8 8v56a8 8 0 0 1-8 8H19a8 8 0 0 1-8-8V18a8 8 0 0 1 8-8Z"/>
+  <path fill="#FFFFFF" d="M25 22h44a8 8 0 0 1 8 8v48a8 8 0 0 1-8 8H25a8 8 0 0 1-8-8V30a8 8 0 0 1 8-8Z"/>
+  <path fill="#4285F4" d="M29 34h36v10H29zm0 18h16v22H29zm22 0h14v6H51zm0 10h14v12H51z"/>
+</svg>
