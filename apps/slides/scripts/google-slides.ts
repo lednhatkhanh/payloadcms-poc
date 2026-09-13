@@ -69,7 +69,20 @@ const slides = await Promise.all(
         .split('\n')
         .filter((line) => line.startsWith('|') && !/^\|[\s:|-]+$/.test(line))
         .map((line) => line.slice(1, line.lastIndexOf('|')).split('|').map(plain))
-      return { number: index + 1, title: plain(title), content, notes, tableRows: rows, images }
+      const htmlRows = [...content.matchAll(/<tr\b[^>]*>([\s\S]*?)<\/tr>/gi)].map((row) =>
+        [...(row[1] ?? '').matchAll(/<t[hd]\b[^>]*>([\s\S]*?)<\/t[hd]>/gi)].map((cell) =>
+          plain(cell[1] ?? ''),
+        ),
+      )
+      if (rows.length && htmlRows.length) throw new Error('Use one table syntax per slide')
+      return {
+        number: index + 1,
+        title: plain(title),
+        content,
+        notes,
+        tableRows: htmlRows.length ? htmlRows : rows,
+        images,
+      }
     }),
 )
 

@@ -7,7 +7,10 @@
     "dev": "slidev slides.md --open",
     "export": "slidev export slides.md --output cms-platform-decision.pdf",
     "export:pptx": "slidev export slides.md --format pptx --scale 6 --with-clicks --output cms-platform-decision.pptx",
-    "typecheck": "tsc --noEmit --strict --types node --target esnext --module nodenext --skipLibCheck scripts/google-slides.ts"
+    "typecheck": "tsc --noEmit --strict --types node --target esnext --module nodenext --skipLibCheck scripts/google-slides.ts",
+    "meeting:dev": "slidev meeting.md --open",
+    "meeting:build": "slidev build meeting.md --out dist-meeting",
+    "meeting:export": "slidev export meeting.md --output cms-platform-meeting.pdf"
   },
   "devDependencies": {
     "@slidev/cli": "52.19.1",

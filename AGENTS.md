@@ -32,10 +32,11 @@ This is a Node.js 24, pnpm 12, TypeScript 7, React 19, Next.js 16 and Payload 3 
 ## Presentation synchronization
 
 - `apps/slides/slides.md` is the canonical content source. Its editable Google Slides companion is https://docs.google.com/presentation/d/1iL6dRuwJaBpfwgokHBY0m0AyClTgALUG6SGwGdc2BEM/edit.
-- When changing local slide content, order, speaker notes, styling, or referenced diagram images, also update that same Google Slides presentation in the same task. This is standing authorization for these matching updates; do not ask again solely to synchronize the deck.
-- Follow `apps/slides/README.md`. Preserve editable text and native tables, retain architecture diagrams as images, and preserve notes, sharing and the presentation ID. Do not replace the companion with a newly imported deck.
-- Check local exports and the Google Slides readback; visually inspect the affected slides for wrapping, clipping, alignment, spacing, contrast and image proportions. Inspect every slide after structural or deck-wide changes. A successful API write alone is not verification.
-- If access or tooling blocks the remote update, finish the local work and explicitly report that Google Slides remains out of sync, including the affected changes. Never claim synchronization without readback and visual verification.
+- For slide-related requests, update the canonical local slide source, affected referenced assets, speaker notes and local exports by default. Validate the affected local slides, and inspect the complete local deck after structural or deck-wide changes.
+- Update the Google Slides companion only when the user explicitly requests Google Slides synchronization in the current task. Local and remote versions may intentionally be out of sync; do not treat this as an error when remote synchronization was not requested.
+- When Google Slides synchronization is requested, follow `apps/slides/README.md`. Update the existing presentation in place, preserve editable text and native tables, retain architecture diagrams as images, and preserve notes, sharing and the presentation ID. Do not replace the companion with a newly imported deck.
+- For requested Google Slides updates, check a fresh readback and visually inspect the affected remote slides for wrapping, clipping, alignment, spacing, contrast and image proportions. Inspect every remote slide after structural or deck-wide changes. A successful API write alone is not verification.
+- If access or tooling blocks a requested remote update, finish the local work and explicitly report that Google Slides remains out of sync, including the affected changes. Never claim synchronization without readback and visual verification.
 
 ## Styling
 
